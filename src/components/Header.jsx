@@ -9,7 +9,7 @@ function Header() {
   return (
     <div className='flex justify-between items-center p-3 lg:max-w-6xl mx-auto'>
 
-        <div className="flex gap-4">
+        <div className="flex gap-14 text-xl">
             <MenuItem title="home" address="/" Icon={AiFillHome}/>
             <MenuItem title="about" address="/about" Icon={BsFillInfoCircleFill}/>
         </div>
