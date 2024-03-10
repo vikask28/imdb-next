@@ -3,7 +3,7 @@ const API_KEY = process.env.API_KEY;
 import Results from '@/components/Results';
 import React from 'react'
 
-async function Home({searchParams}) {
+async function Home({ searchParams }) {
 
   const genre = searchParams.genre || 'hollywood'
   // const res = await fetch(
