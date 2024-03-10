@@ -5,7 +5,7 @@ import React from 'react'
 
 async function Home({searchParams}) {
 
-  const genre = searchParams.genre || 'bollywood'
+  const genre = searchParams.genre || 'hollywood'
   // const res = await fetch(
   //   `http://www.omdbapi.com/?s=${genre}&apikey=${API_KEY}`
   // );

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Card({ result }) {
   return (
-    <div className='group cursor-pointer hover:shadow-slate-400 shadow-md rounded-lg border sm:border-slate-400 sm:m-2 transition-shadow duration-200 '>
+    <div className='group cursor-pointer hover:shadow-slate-400 shadow-md rounded-lg border sm:border-slate-400 sm:m-2 transition-shadow duration-200 overflow-hidden '>
         <img
         className='w-60'
         src={`${result.Poster}`}
