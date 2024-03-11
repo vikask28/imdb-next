@@ -9,8 +9,8 @@ export default function Navbar() {
         param='hollywood' /> 
         <NavbarItem title='Bollywood' 
         param='bollywood' />
-        <NavbarItem title='Romance' 
-        param='romance' />
+        <NavbarItem title='Love' 
+        param='love' />
         <NavbarItem title='Fight' 
         param='fight' />
         <NavbarItem title='Dark' 
