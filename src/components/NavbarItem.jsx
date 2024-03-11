@@ -1,14 +1,16 @@
 'use client'
-import React from 'react'
+
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 
-function NavbarItem({ title, param }) {
+
+export default function NavbarItem({ title, param }) {
 
     const searchParams = useSearchParams();
     const genre = searchParams.get('genre')
 
     return (
+              
         <div>
             <Link 
             className={`hover:text-amber-600 font-semibold ${
@@ -20,7 +22,6 @@ function NavbarItem({ title, param }) {
                 {title}
             </Link>
         </div>
+        
     )
 }
-
-export default NavbarItem

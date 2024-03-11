@@ -1,7 +1,6 @@
-import React from 'react'
 import NavbarItem from './NavbarItem'
 
-function Navbar() {
+export default function Navbar() {
   return (
     <div className='flex items-center dark:bg-gray-600 bg-amber-100 p-4 lg:text-lg justify-center gap-12'>
       <p className='text-xs text-amber-500'>Popular Search Terms :</p>
@@ -18,5 +17,3 @@ function Navbar() {
     </div>
   )
 }
-
-export default Navbar

@@ -1,19 +1,16 @@
-'use client'
+'use client';
 
 import { useRouter } from 'next/navigation'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 
-function SearchBox() {
-
+export default function SearchBox() {
    const [search, setSearch] = useState('')
-
    const router = useRouter();
-
     const handleSubmit = (e)=>{
         e.preventDefault();
         router.push(`/search/${search}`)
-    }
+    };
 
   return (
     <form
@@ -29,5 +26,3 @@ function SearchBox() {
     </form>
   )
 }
-
-export default SearchBox

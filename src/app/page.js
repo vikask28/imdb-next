@@ -1,32 +1,20 @@
+import Results from '@/components/Results';
+
 const API_KEY = process.env.API_KEY;
 
-import Results from '@/components/Results';
-import React from 'react'
+export default async function Home({ searchParams }) {
 
-async function Home({ searchParams }) {
-
-  const genre = searchParams.genre || 'hollywood'
-  // const res = await fetch(
-  //   `http://www.omdbapi.com/?s=${genre}&apikey=${API_KEY}`
-  // );
-  // const data = await res.json();
-  // if(!res.ok){
-  //   throw new Error('Failed to fetch data');
-  // }
-
-  // const results = data.results;
-  // console.log(results);
-   
-
+      const genre = searchParams.genre || 'hollywood'
       const URL = `http://www.omdbapi.com/?s=${genre}&apikey=${API_KEY}`
-      const response = await fetch(URL)
+      const response = await fetch(URL, { next: { revalidate: 10000 } })
       const finalData = await response.json()
+      if(!response.ok){
+        throw new Error('Failed to fetch data');
+      }
       const results = finalData.Search;
   
-
-  return <div>
+  return( <div>
       <Results results={results} />
   </div>
+  );
 }
-
-export default Home

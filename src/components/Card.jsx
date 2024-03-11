@@ -1,6 +1,4 @@
-import React from 'react'
-
-function Card({ result }) {
+export default function Card({ result }) {
   return (
     <div className='group cursor-pointer hover:shadow-slate-400 shadow-md rounded-lg border sm:border-slate-400 sm:m-2 transition-shadow duration-200 overflow-hidden '>
         <img
@@ -14,5 +12,3 @@ function Card({ result }) {
     </div>
   )
 }
-
-export default Card
