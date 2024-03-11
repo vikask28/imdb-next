@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className='flex flex-wrap mx-auto lg:justify-between max-w-6xl items-center gap-5'>
       <p className='text-xs text-amber-500 overflow-x-hidden'>Popular Search Terms :</p>
         <NavbarItem title='Hollywood' 
-        param='hollywood' />
+        param='hollywood' /> 
         <NavbarItem title='Bollywood' 
         param='bollywood' />
         <NavbarItem title='Romance' 
