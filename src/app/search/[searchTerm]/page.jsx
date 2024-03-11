@@ -1,5 +1,7 @@
 import Results from '@/components/Results';
 
+const API_KEY = process.env.API_KEY;
+
 async function SearchPage({ params }) {
     const searchTerm = params.searchTerm;
     const URL = `http://www.omdbapi.com/?s=${searchTerm}&apikey=${API_KEY}`
